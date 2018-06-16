@@ -45,7 +45,7 @@ function createGraphic(data) {
 		monthData.forEach(function(yearData, i) {
 			let id = yearData.year + "_" + yearData.month;
 			let color = colors[i];
-			$td = $("table#dataTable td#" + id);
+			let $td = $("table#dataTable td#" + id);
 			$td.text(i+1); 
 			$td.on("mouseover", function(e) {
 				$(e.target).text(yearData.value);
