@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<title>Hottest months</title>
+<meta charset="utf-8">
+<script src="lib/jquery-3.3.1.min.js"></script>
+<script src="gta_data.js"></script>
+<script src="gta.js"></script>
+<style>
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+div#legend {
+	position: relative;
+	background-color: rgb(250, 250, 250); 
+	display: inline-block;
+	padding: 5px 5px 20px 5px;
+	font-size: .8em;
+}
+div#legend div.left {
+	position: absolute;
+	bottom: 5px; left: 5px;
+}
+div#legend div.right {
+	position: absolute;
+	bottom: 5px; right: 5px;
+}
+ul#colorList {
+	padding: 0px;
+	margin: 5px 0px;
+}
+ul#colorList li {
+	list-style-type: none;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+}
+table#dataTable {
+	width: 100%;
+	table-layout: fixed;
+}
+table#dataTable td {
+	background-color: rgb(250, 250, 250);
+	padding: 1px;
+	border: 1px solid white;
+	font-size: .5em;
+	text-align: center;
+	height: 25px;
+}
+</style>
+</head>
+<body>
+<h1>Top Ten Hottest Months</h1>
+<div id="legend">
+	<ul id="colorList"></ul>
+	<div class="left">hotter</div> <div class="right">cooler</div>
+</div>
+<table id="dataTable">
+<tr><th></th><th>Jan</th><th>Feb</th><th>Mar</th><th>Apr</th><th>May</th><th>Jun</th><th>Jul</th><th>Aug</th><th>Sep</th><th>Oct</th><th>Nov</th><th>Dec</th></tr>
+
+</table>
+</body>
+</html>
+
