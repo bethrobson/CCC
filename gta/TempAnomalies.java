@@ -18,7 +18,7 @@ public class TempAnomalies {
 				anomaliesByYear.stream().collect(
 						Collectors.groupingBy(a -> a.getMonth(), Collectors.toList()));
 
-		//anomaliesByMonth.forEach((k, v) -> 
+
 		List<List<TempAnomaly>> sortedByMonth = anomaliesByMonth.entrySet()
 			.stream()
 			.map(entry -> { // sort each list value in the Map
